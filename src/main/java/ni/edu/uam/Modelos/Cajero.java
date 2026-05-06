@@ -95,11 +95,11 @@ public class Cajero {
     public void notificarPedidoListo(Pedido pedido) {
         JOptionPane.showMessageDialog(
                 null,
-                "Pedido #" + pedido.getId() + " listo."
+                "Su edido #" + pedido.getId() + " ya entro a cocina"
         );
 
         pedido.getCliente().recibirNotificacion(
-                "Su pedido está listo para entregar."
+                "Pedido # " + pedido.getId()+ " Listo."
         );
     }
 

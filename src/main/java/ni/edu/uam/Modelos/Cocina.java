@@ -7,7 +7,9 @@ public class Cocina {
         System.out.println("Cocina preparando pedido #" + pedido.getId());
 
         pedido.cambiarEstado("LISTO");
+        System.out.println(" Su orden de pedido# " + pedido.getId() + "Entro a cocina");
         System.out.println("Pedido #" + pedido.getId() + " listo");
+
 
         cajero.notificarPedidoListo(pedido);
     }
